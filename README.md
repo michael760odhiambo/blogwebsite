@@ -14,7 +14,7 @@
 
 * Under the repository name, click Clone or download.
 
-In the Clone with HTTPs section, click to copy the clone URL for the repository.
+* In the Clone with HTTPs section, click to copy the clone URL for the repository.
 
 Open Terminal.
 
