@@ -1,7 +1,7 @@
 # BLOGAPP
 
 # Author
-MICHAEL ODHIAMBO
+* MICHAEL ODHIAMBO
 Technologies used
 Flask
 
