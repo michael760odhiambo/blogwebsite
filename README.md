@@ -5,7 +5,7 @@
 * Technologies used
 * Flask
 
-Python
+* Python
 
 Setup/Installation Instruction
 steps to follow
