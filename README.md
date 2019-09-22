@@ -37,7 +37,7 @@
 
 * $ Unpacking objects: 100% (10/10), done.
 
-you will see something similar to what is above here and you will have already cloned the repo.
+* you will see something similar to what is above here and you will have already cloned the repo.
 
 Contact
 you can reach on social media through
