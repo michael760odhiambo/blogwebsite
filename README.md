@@ -10,7 +10,7 @@
 # Setup/Installation Instruction
 * steps to follow
 
-On GitHub, navigate to the main page of the repository.
+* On GitHub, navigate to the main page of the repository.
 
 Under the repository name, click Clone or download.
 
