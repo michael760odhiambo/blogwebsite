@@ -2,7 +2,7 @@
 
 # Author
 * MICHAEL ODHIAMBO
-Technologies used
+* Technologies used
 Flask
 
 Python
