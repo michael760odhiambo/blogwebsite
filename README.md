@@ -3,7 +3,7 @@
 # Author
 * MICHAEL ODHIAMBO
 * Technologies used
-Flask
+* Flask
 
 Python
 
