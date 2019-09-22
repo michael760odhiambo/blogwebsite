@@ -16,7 +16,7 @@
 
 * In the Clone with HTTPs section, click to copy the clone URL for the repository.
 
-Open Terminal.
+* Open Terminal.
 
 Change the current working directory to the location where you want the cloned directory to be made.
 
