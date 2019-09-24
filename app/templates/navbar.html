@@ -11,14 +11,18 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="/">Home</a></li>
-            
-                
-                    <li><a href="/">About</a></li>
+                        
+                    <li><a href="{{url_for('main.index')}}">Home</a></li>
+                    <li></li>
+                    <li><a href="{{url_for('main.post_blog',uname=current_user.username)}}">Make a post</a></li>
+                    <li><a href="{{url_for('main.view_page')}}">View post</a></li>
+                    <li><a href="{{url_for('main.update_profile',uname=current_user.username)}}">Profile</a></li>
+                    
+                    <li><a href="{{url_for('auth.register',uname=current_user.username)}}">Sign Up</a></li>
       
             
                
-                    <li><a href="/">Log In</a></li>
+                    <li><a href="{{url_for('auth.login')}}">Log In</a></li>
                     {% if current_user.is_authenticated %}
                     <li style="color:white;padding:15px;">{{current_user.username}}</li>
                     <li><a href="{{url_for('auth.logout')}}">Sign out</a></li>

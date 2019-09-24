@@ -5,11 +5,28 @@
 
 {% block styles%}
     {{ super() }}
-    <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/styles.css')}}">
 {% endblock %}
 
 
 
 {% block content %}
+
+<div class="container-fluid">
+        <div class="hero-image">
+                <div class="hero-text">
+                  <h3 style="color: black">Hello there welcome blogwebsite</h3>
+                  <p>Fell free to Sign Up with us and enjoy mutiple offers</p>
+                  <a href="{{url_for('auth.register',uname=current_user.username)}}" class="btn btn-success">Sign Up</a><br><br>
+                  <small>or</small>
+                  <a href="{{url_for('auth.login',uname=current_user.username)}}" class="btn btn-info">Log In</a>
+                </div>
+                {% for quote in quotes %}
+                 <h3> Qoute of the day</h3>
+                        <p>{{ quotes.author}}</p>
+                        <p>{{ quotes.quote}}<p> 
+                 </div>
+                 {% endfor %}
+</div>
    
 {% endblock %}

@@ -7,17 +7,17 @@ from wtforms import ValidationError
 class RegistrationForm(FlaskForm):
     email = StringField('Your Email Address',validators=[Required(),Email()])
     username = StringField('Enter Your Username',validators=[Required()]) 
-    password = PasswordField('Password',validators=[Required(),EqualTo('password_confirm',message='passwords must mutch')])
+    password = PasswordField('Password',validators=[Required(),EqualTo('confim_password',message='passwords must mutch')])
     confim_password = PasswordField('Confirm_Password', validators=[Required()])
     submit = SubmitField('Sign Up')
 
     def validate_email(self,data_field):
         if User.query.filter_by(email=data_field.data).first():
-            raise ValidationError('There is an account with that Email', 'danger')
+            raise ValidationError('There is an account with that Email')
 
     def validate_username(self,data_field):
         if User.query.filter_by(username=data_field.data).first():
-            raise ValidationError('That username is taken','warning') 
+            raise ValidationError('That username is taken') 
 
 class LoginForm(FlaskForm):
     email = StringField('Your Email Address',validators=[Required(),Email()])
